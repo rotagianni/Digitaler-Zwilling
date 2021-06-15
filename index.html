@@ -9,7 +9,7 @@
     <div class="body-filter">
      
         <header>
-            <h1>Digitaler Zwilling <br>eines Fischertechnik Roboters</h1>
+            <h1 id="title">Digitaler Zwilling <br>eines Fischertechnik Roboters</h1>
             <nav>
                 <ul class="nav_links">
                     <li><a href="index.html">Home</a></li>
@@ -19,6 +19,20 @@
                 </ul>
             </nav>
         </header>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+                var title = document.getElementById("title");
+                if(window.scrollY > 0){
+                title.innerHTML = "Digitaler Zwilling eines Fischertechnik Roboters";
+                } else {
+                    title.innerHTML = "Digitaler Zwilling <br>eines Fischertechnik Roboters";
+                }
+            })
+        </script>
+
+        <div class="spacer"></div>
 
         <div class="slidershow">
             <div class="slides">
@@ -58,22 +72,22 @@
             <h2>Projektziel</h2>
             <br>
             <p>
-                Bei diesem Projekt, mit dem Titel "Digitaler Zwilling eines Fischertechnik Roboters", geht es darum, einen Roboter der Marke Fischertechnik visuell zu replizieren, so dass Programme, die auf dem physischen Roboter ausgeführt werden können auch auf dem digitalen Zwilling laufen und das Verhalten des physischen Roboters wiedergespiegelt wird.
-                <br> <br>
-               
-                Ziel des Projekts ist es also eine Software zu entwickeln, die alle nötigen Funktionen bietet, um die gewünschten Anwendungsfälle abzudecken. Bei der Entwicklung einer solchen Software sollen alle bisher gesammelten Kenntnisse in Bezug auf Software-Engineering, Projektmanagement und reine Programmierung eingesetzt werden.
+                Bei diesem Projekt ging es darum einen Roboter der Marke Fischertechnik visuell zu replizieren, so dass Programme, die auf dem physischen Roboter ausgeführt werden können auch auf dem digitalen Zwilling funktionieren und das Verhalten des physischen Roboters exakt wiedergespiegelt wird.
+                Ziel des Projekts war es eine Software zu entwickeln, die alle nötigen Funktionen bietet, um die gewünschten Anwendungsfälle abzudecken.
             </p>
         </div>
 
-        <div class="article">
-            <h2>Verwendungszecke</h2>
-            <br>
-            <p>
-                Dadurch wird erreicht, dass solche Programme zuerst auf dem digitalen Zwilling getestet werden können, bevor sie auf dem physischen Roboter zur Anwendung kommen. Auftretende Fehler können bereits hier erkannt und behoben werden. Zusätzlich sind, im Gegensatz zu der realen Umgebung, in der Simulation keine Folgeschäden zu erwarten. 
-                <br> <br>
-                Des weiteren besteht die Möglichkeit Programme zu testen ohne einen physischen Roboter zur Hand zu haben. Entweder um geschriebene Programme auf deren Richtigkeit zu überprüfen oder, um die Funktionalität des Fischertechnik-Vakuumgrippers vor eines Kaufs verifizieren zu können.
-                <br> <br>
-            </p>
+        <div class="article2">
+            <div class="article-image">
+                <img src="pictures/verwendungszweck.jpg" alt="">
+            </div>
+            <div class="article-content">
+                <h2>Verwendungszweck</h2>
+                <br>
+                <p>
+                    Die Software ermöglicht, dass Roboter-Programme zuerst auf dem digitalen Zwilling getestet werden können, bevor sie auf dem physischen Roboter zur Anwendung kommen. Auftretende Fehler können bereits hier erkannt und behoben werden. Zusätzlich sind, im Gegensatz zu der realen Umgebung, in der Simulation keine Folgeschäden zu erwarten. Des weiteren besteht die Möglichkeit Programme zu testen ohne einen physischen Roboter zur Hand zu haben. Entweder um geschriebene Programme auf deren Richtigkeit zu überprüfen oder, um die Funktionalität des Fischertechnik-Vakuumgrippers vor eines Kaufs verifizieren zu können.
+                </p>
+            </div>
         </div>
 
         
