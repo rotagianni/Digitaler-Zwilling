@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -12,15 +14,16 @@
 }
 
 body {
-    background-color: rgb(255, 137, 137);
-    background-image: url("bg.jpg");
+    background-color: rgb(255, 255, 255);
+    /*background-image: url("bg.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 
 .body-filter {
-    /*background-color: #24252A;*/  
+    /*background-color: #24252A;
     background-color: rgba(0, 0, 0, 0.555)
+    */  
 }
 
 header li, a, button {
@@ -215,7 +218,41 @@ input[name="r"] {
     margin-bottom: 105px;
 }
 
-/* ARTICLE */
+/* ARTICLE 1 */
+.article1 {
+    background-color: rgba(0, 0, 0, 0.712);
+    margin: auto;
+    width: 71.5%;
+    padding: 0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    display: flex;  
+}
+.article1 .article-image {
+    flex-basis: 50%;
+    height: 100%;
+    max-height: 480px;
+    overflow: hidden;
+}
+.article1 .article-image img{
+    height: 100%;
+    scale: 100%; 
+    transform: translate(-10%, -17%);
+}
+.article1 .article-content {
+    flex-basis: 100%;
+    padding: 34px;
+}
+.article1 > div {
+    flex-basis: 50%;
+}
+.article1 .article-content p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+/* ARTICLE 2 */
 .article2 {
     background-color: rgba(0, 0, 0, 0.849);
     margin: auto;
@@ -223,37 +260,131 @@ input[name="r"] {
     padding: 0;
     margin-bottom: 20px;
     border-radius: 4px;
-    display: flex;
-    
-    
+    display: flex;  
 }
-
-
-
 .article2 .article-image {
     flex-basis: 50%;
     height: 100%;
     max-height: 480px;
     overflow: hidden;
-  
 }
-
 .article2 .article-image img{
     height: 100%;
     scale: 100%; 
     transform: translate(-10%, -17%);
 }
-
 .article2 .article-content {
     flex-basis: 75%;
     padding: 34px;
 }
-
-
 .article2 > div {
     flex-basis: 50%;
 }
 
+
+
+
+
+
+
+
 .spacer {
     height: 165px;
 }
+
+
+
+/* COLLAPSIBLE */
+
+input[type='checkbox'] {
+    display: none;
+  }
+
+  .lbl-toggle {
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      text-transform: uppercase;
+      color: #e0e0e0;
+      background: #000000a8;
+      cursor: pointer;
+      border-radius: 7px;
+      transition: all 0.25s ease-out;
+      display: flex;
+      overflow: hidden;
+  }
+
+  .collapsible-title {
+    padding-top: auto;
+    margin: auto;
+    font-size: 38px;
+  }
+  
+  .collapsible-title-image {
+      overflow: hidden;
+      width: 400px;
+      height: 200px;    
+  }
+
+  .collapsible-title-image img{
+    width: inherit;
+}
+
+  .lbl-toggle:hover {
+    color: #94b5eb;
+  }
+
+  .lbl-toggle::before {
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+
+    margin-right: .7rem;
+
+    transition: transform .2s ease-out;
+  }
+
+  .collapsible-content .content-inner {
+    background: rgba(0, 0, 0, 0.712);
+    border-bottom: 1px solid rgb(255, 255, 253);
+  
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 1rem 2rem;
+  }
+
+.collapsible-content .content-inner p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    
+  
+    transition: max-height .25s ease-in-out;
+  }
+
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
+  }
+
+  .toggle:checked + .lbl-toggle::before {
+    transform: translateX(-5px);
+  }
+  
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .wrap-collabsible {
+      margin: auto;
+      width: 71.5%;
+      overflow: hidden;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
