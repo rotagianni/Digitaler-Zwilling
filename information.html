@@ -41,7 +41,7 @@
                     Analysephase
                 </div>
                 <div class="collapsible-title-image">
-                    <img src="pictures/analysis.jpg" alt="">
+                    <img src="pictures/analysis.jpg"alt="">
                 </div>
 
             </label>
@@ -51,25 +51,10 @@
                     Zu Beginn des Projekts haben wir uns gemeinsam als Team zusammengesetzt und besprochen wie wir an dieses Projekt herangehen möchten. Relativ zügig sind wir zu dem Schluss gekommen, dass wir das Projekt in drei große Phasen einteilen werden. Die Analyse-, Implementierungs- und die Integrationsphase.
                     <br>
                     In der Analysephase geht es besonders darum, alle nötigen Anforderungen zu formulieren, um mit der Softwareentwicklung beginnen zu können. Die einzelnen Themenbereiche werden nun detaillierter erläutert.
-
-                    <div class="wrap-collabsible">
-                        <input id="collapsible4" class="toggle" type="checkbox">
-                        <label for="collapsible4" class="lbl-toggle">
-                            <div class="collapsible-title">
-                                Analysephase
-                            </div>
-            
-                        </label>
-                        <div class="collapsible-content">
-                          <div class="content-inner">
-                            <p>
-                                Zu Beginn des Projekts haben wir uns gemeinsam als Team zusammengesetzt und besprochen wie wir an dieses Projekt herangehen möchten. Relativ zügig sind wir zu dem Schluss gekommen, dass wir das Projekt in drei große Phasen einteilen werden. Die Analyse-, Implementierungs- und die Integrationsphase.
-                                <br>
-                                In der Analysephase geht es besonders darum, alle nötigen Anforderungen zu formulieren, um mit der Softwareentwicklung beginnen zu können. Die einzelnen Themenbereiche werden nun detaillierter erläutert.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+                    <br> <hr> <br>
+                    Einer der ersten Aufgaben die Anstand, war das zuteilen von gewissen Arbeitspaketen und entsprechenden Verantwortlichkeiten. Dazu haben wir uns überlegt welche möglichen Arbeitsbereiche und Aufgaben es in diesem Projekt gibt und wer sich auf welches Thema spezialisiert. Erarbeitet haben wir uns dabei vorerst die Arbeitsbereiche wie in der Tabelle zu sehen.
+                    <br>
+                    Anschließend haben wir darüber gesprochen wer sich was zutraut, in welchen Bereichen jeder seine Stärken und Schwächen hat und wo vielleicht jemand schon mehr Erfahrung gesammelt hat im Vergleich zu anderen. Anhand dessen haben wir die Hauptverantwortlichen den beschlossenen Arbeitsbereichen folgendermaßen zugeteilt:
 
                 </p>
               </div>
@@ -83,17 +68,37 @@
                     3D Modellierung
                 </div>
                 <div class="collapsible-title-image">
-                    <img src="pictures/analysis.jpg" alt="">
+                    <img src="pictures/3dm.jpg"  style="transform: translateY(-58px);" alt="">
                 </div>
 
             </label>
             <div class="collapsible-content">
               <div class="content-inner">
-                <p>
-                    Zu Beginn des Projekts haben wir uns gemeinsam als Team zusammengesetzt und besprochen wie wir an dieses Projekt herangehen möchten. Relativ zügig sind wir zu dem Schluss gekommen, dass wir das Projekt in drei große Phasen einteilen werden. Die Analyse-, Implementierungs- und die Integrationsphase.
-                    <br>
-                    In der Analysephase geht es besonders darum, alle nötigen Anforderungen zu formulieren, um mit der Softwareentwicklung beginnen zu können. Die einzelnen Themenbereiche werden nun detaillierter erläutert.
-                </p>
+                  <h2>Modellieren der Bauteile in Fusion 360</h2>
+                  <hr>
+                  <p>Zu Beginn musste jedes Bauteil des realen Roboters erst einmal modelliert werden, um ein exaktes replika als 3D-Modell erstellen zu können. Glücklicherweise hat Fischertechnik bereits viele 3D-Modelle ihrer Bauteile veröffentlicht, so dass wir nur sehr wenige mithilfe des Programms Fusion 360 selbst erstellen mussten.
+                  </p>
+                  <br> <br>
+                  <h2>Zusammensetzen der Bauteile in Blender</h2>
+                  <hr>
+                  <p>Die modellierten Bauteile wurden danach in dem populären 3D-Modellierungs-Programm Blender zusammengesetzt. Unter anderem konnten zusammengehörige Bauteilgruppen bereits hier gruppiert und jedem Bauteil eine passende Textur oder ein passendes Material verpasst werden. 
+                  </p>
+                  <br> <br>
+                  <h2>Importieren des 3D-Modells in Unity</h2>
+                  <hr>
+                  <p>Das 3D-Modell des Fischertechnik Vakuum-Sauggreifers sieht nach der Fertigstellung in Blender bereits sehr gut aus. Doch um den Roboter auch steuern zu können, muss das 3D-Modell in Unity importiert werden. In Unity ist es möglich die weitverbreitetsten 3D-Modell Dateiformate ohne Probleme zu importieren. So auch das zuvor erstellte Blenderprojekt des Roboters.
+                  </p>
+                  <br> <br>
+                  <h2>Entwickeln der Ansteuerbarkeit des Roboters</h2>
+                  <hr>
+                  <p>In Unity ist es relativ einfach die bereits in Blender hergestellten Beziehungen - zum Beispiel zwischen Zahnrädern - in Bewegung zu setzen und zu simulieren. Den einzelnen Komponenten kann man C# Skripte zuweisen, die so ziemlich alles kontrollieren können. Um die spätere Ansteuerbarkeit durch externe Java-Programme und betätigte Buttons zu ermöglichen, mussten entsprechende Schnittstellen bereitgestellt werden, die Bewegungsbefehle an Motoren und Sensoren weiterleiten.
+                  </p>
+                  <br> <br>
+                  <h2>Modellieren der Umgebung</h2>
+                  <hr>
+                  <p>Um die Umstände in denen sich der Roboter in einer realen Situation befinden würde noch besser zu simulieren sollte natürlich auch die unmittelbare Umgebung modelliert werden. In der Hochschule wären das noch weitere Fischertechnik-Roboter der Fischertechnik-Fabrik gewesen. Damit jeder dieser Roboter nicht einzeln modelliert werden muss, haben wir uns für eine modernere Variante entschieden, um ein 3D-Modell der Umgebung zu erzeugen. Und zwar eine Methode mit der sich ein 3D-Modell aus vielen Fotos des zu modellierenden Objekts konstruieren lässt. //Todo name
+                  </p>
+                  <br> <br>
               </div>
             </div>
           </div>
@@ -105,18 +110,43 @@
                     User Interface Design
                 </div>
                 <div class="collapsible-title-image">
-                    <img src="pictures/analysis.jpg" alt="">
+                    <img src="pictures/ui22.jpg.jpeg" style="transform: translateY(-80px);" alt="">
                 </div>
 
             </label>
             <div class="collapsible-content">
               <div class="content-inner">
-                <p>
-                    Zu Beginn des Projekts haben wir uns gemeinsam als Team zusammengesetzt und besprochen wie wir an dieses Projekt herangehen möchten. Relativ zügig sind wir zu dem Schluss gekommen, dass wir das Projekt in drei große Phasen einteilen werden. Die Analyse-, Implementierungs- und die Integrationsphase.
-                    <br>
-                    In der Analysephase geht es besonders darum, alle nötigen Anforderungen zu formulieren, um mit der Softwareentwicklung beginnen zu können. Die einzelnen Themenbereiche werden nun detaillierter erläutert.
+                <h2>Mockup</h2>
+                <hr>
+                <p>Jede gute Software braucht selbstverständlich auch eine schöne Benutzeroberfläche. Um nicht einfach drauflos zu entwickeln ohne zu wissen was am Ende dabei herauskommt und ob damit überhaupt irgendjemand etwas anfangen kann, haben wir zuerst einen Prototypen erstellt. Dieser Prototyp stellt ein Konzept dar, welches die gewünschten Anforderungen erfüllen soll. Wird dieses Konzept vom Kunde akzeptiert, kann es an die Implementierung gehen.
                 </p>
-              </div>
+                <br> <br>
+                <h2>Implementierung</h2>
+                <hr>
+                <p>Entwickelt haben wir die Benutzeroberfläche in Unity. Diese 3D-Engine ist nicht nur hervorragend dafür geeignet das 3D-Modell des Roboters anzuzeigen und zu simulieren sondern auch um eine dazu passende UI zu erstellen. Denn Unity bietet standardmäßig einige Komponenten und dazugehörige Einstellungen an, um das entwickeln einer Benutzeroberfläche möglichst einfach zu gestalten. <br> <br>
+                </p>
+                <br> <br>
+                <h2>Java-Programm Steuerung</h2>
+                <hr>
+                <p>Damit der Benutzer der Software in der Lage ist sich mit seinem Java-Programm zu verbinden, benötigt er die IP-Adresse, zu der er sich verbinden soll. Deshalb muss einen kleinen Ausschnitt in der UI geben, der diese Anzeigt und auch den aktuellen Status also ob eine Verbindung zu einem Java-Programm besteht. Außerdem sollen alle anderen UI-Elemente nicht nutzbar sein solange der Roboter durch ein solches Programm gesteuert wird.
+                </p>
+                <br> <br>
+                <h2>Manueller Modus</h2>
+                <hr>
+                <p>Der Manuelle Modus soll es dem Benutzer ermöglichen den Roboter auch ohne ein externes Programm steuern zu können. Deshalb bietet die Benutzeroberfläche eine zwei Schnittstellen, um den Roboter manuell ansteuern zu können.
+                <br> <br>  
+                Die erste sehr einfache Variante erlaubt es den Roboter per Buttons in allen drei Dimensionen bewegen zu können. Dabei wird die entsprechende Bewegung solange ausgeführt, wie der Benutzer den jeweiligen Button gedrückt hält. TODO BILD <br> <br>
+                Wer stattdessen eine etwas spezifischere Bewegung ausführen möchte, der hat die Möglichkeit je Bewegungsachse die gewünschte Distanz und Geschwindigkeit festzulegen.
+                <br> <br>
+                Bei noch höheren Ansprüchen bleibt dem Benutzer nichts anderes übrig als ein externes Programm zu schreiben, dass der Roboter abarbeiten soll. 
+                </p>
+                <br> <br>
+                <h2>Live Protokoll</h2>
+                <hr>
+                <p>Für manche Benutzer mag es auch wichtig sein detailliertere Informationen über die bestehenden Vorgänge des Roboters einsehen zu können. Auch das ermöglichen wir dem Benutzer indem die Protokoll-Daten nicht nur in eine Datei geschrieben sondern auch auf Wunsch in der UI angezeigt werden.
+                </p>
+                <br> <br>
+            </div>
             </div>
           </div>
 
@@ -127,18 +157,28 @@
                     Ansteuerung des Roboters
                 </div>
                 <div class="collapsible-title-image">
-                    <img src="pictures/analysis.jpg" alt="">
+                    <img src="pictures/txt.jpg" style="transform: translateY(-65px);" alt="">
                 </div>
 
             </label>
             <div class="collapsible-content">
               <div class="content-inner">
-                <p>
-                    Zu Beginn des Projekts haben wir uns gemeinsam als Team zusammengesetzt und besprochen wie wir an dieses Projekt herangehen möchten. Relativ zügig sind wir zu dem Schluss gekommen, dass wir das Projekt in drei große Phasen einteilen werden. Die Analyse-, Implementierungs- und die Integrationsphase.
-                    <br>
-                    In der Analysephase geht es besonders darum, alle nötigen Anforderungen zu formulieren, um mit der Softwareentwicklung beginnen zu können. Die einzelnen Themenbereiche werden nun detaillierter erläutert.
+                <h2>Replizieren des Kommunikationsprotokolls</h2>
+                <hr>
+                <p>Der reale Fischertechnik-Vakuumsauggreifer wird über ein spezielles Kommunikationsprotokoll angesteuert. Damit es keinen Unterschied für den Benutzer macht ob er den realen oder den digitalen Zwilling ansteuert, muss das reale Kommunikationsprotokoll des Roboters digital exakt repliziert werden. Dazu musste das reale Protokoll erstmal genauer analysiert und verstanden werden, da Fischertechnik keine besonders detaillierte Beschreibung zu dem Aufbau des Protokolls freigegeben hat.
                 </p>
-              </div>
+                <br> <br>
+                <h2>Aufbauen einer TCP-Verbindung</h2>
+                <hr>
+                <p>Damit überhaupt irgendeine Art von Kommunikation stattfinden kann, muss zwischen dem Programm des Benutzers und unserer zu entwickelnden Software eine Verbindung aufgebaut werden. Für das dauerhafte versenden von Nachrichten baut man am besten eine konstante Verbindung auf. Das wird üblicherweise über das sehr populäre TCP-Protokoll erreicht. Für diesen Ansatz haben auch wir uns entschieden, um eine kontinuierliche Übertragung von Daten zu gewährleisten.
+                </p>
+                <br> <br>
+                <h2>Befehlsinterpretation und Weitergabe</h2>
+                <hr>
+                <p>Die versendeten Nachrichten und Befehle müssen selbstverständlich auch korrekt interpretiert und dementsprechend an die Motoren und Sensoren des Roboters gesendet werden, um dort zur Ausführung zu kommen. Dafür wurde eine Schnittstelle entwickelt, die sämtlichen Befehlsverkehr regelt und für alle anderen Komponenten leicht zugänglich und ansprechbar ist.
+                </p>
+                <br> <br>
+            </div>
             </div>
           </div>
 
@@ -155,12 +195,22 @@
             </label>
             <div class="collapsible-content">
               <div class="content-inner">
-                <p>
-                    Zu Beginn des Projekts haben wir uns gemeinsam als Team zusammengesetzt und besprochen wie wir an dieses Projekt herangehen möchten. Relativ zügig sind wir zu dem Schluss gekommen, dass wir das Projekt in drei große Phasen einteilen werden. Die Analyse-, Implementierungs- und die Integrationsphase.
-                    <br>
-                    In der Analysephase geht es besonders darum, alle nötigen Anforderungen zu formulieren, um mit der Softwareentwicklung beginnen zu können. Die einzelnen Themenbereiche werden nun detaillierter erläutert.
+                <h2>Kollisionsboxen erstellen</h2>
+                <hr>
+                <p>TODO
                 </p>
-              </div>
+                <br> <br>
+                <h2>Erkennen von erwarteten und unerwarteten Kollisionen</h2>
+                <hr>
+                <p>TODO
+                </p>
+                <br> <br>
+                <h2>Kollisions Kamera- und Informationssystem</h2>
+                <hr>
+                <p>TODO
+                </p>
+                <br> <br>
+            </div>
             </div>
           </div>
 
@@ -177,12 +227,17 @@
             </label>
             <div class="collapsible-content">
               <div class="content-inner">
-                <p>
-                    Zu Beginn des Projekts haben wir uns gemeinsam als Team zusammengesetzt und besprochen wie wir an dieses Projekt herangehen möchten. Relativ zügig sind wir zu dem Schluss gekommen, dass wir das Projekt in drei große Phasen einteilen werden. Die Analyse-, Implementierungs- und die Integrationsphase.
-                    <br>
-                    In der Analysephase geht es besonders darum, alle nötigen Anforderungen zu formulieren, um mit der Softwareentwicklung beginnen zu können. Die einzelnen Themenbereiche werden nun detaillierter erläutert.
+                <h2>Schnittstelle für Logging</h2>
+                <hr>
+                <p>TODO
                 </p>
-              </div>
+                <br> <br>
+                <h2>Live Protokoll</h2>
+                <hr>
+                <p>TODO
+                </p>
+                <br> <br>
+            </div>
             </div>
           </div>
 
@@ -193,46 +248,35 @@
                     Dokumentation
                 </div>
                 <div class="collapsible-title-image">
-                    <img src="pictures/analysis.jpg" alt="">
+                    <img src="pictures/gantt.PNG" style="transform: translateY(-65px);" alt="">
                 </div>
 
             </label>
             <div class="collapsible-content">
               <div class="content-inner">
-                <p>
-                    Zu Beginn des Projekts haben wir uns gemeinsam als Team zusammengesetzt und besprochen wie wir an dieses Projekt herangehen möchten. Relativ zügig sind wir zu dem Schluss gekommen, dass wir das Projekt in drei große Phasen einteilen werden. Die Analyse-, Implementierungs- und die Integrationsphase.
-                    <br>
-                    In der Analysephase geht es besonders darum, alle nötigen Anforderungen zu formulieren, um mit der Softwareentwicklung beginnen zu können. Die einzelnen Themenbereiche werden nun detaillierter erläutert.
+                <h2>Pflichtenheft und Abschlussbericht</h2>
+                <hr>
+                <p>TODO
                 </p>
-              </div>
+                <br> <br>
+                <h2>Dokumentationstool festlegen</h2>
+                <hr>
+                <p>TODO
+                </p>
+                <br> <br>
+                <h2>Quelltextdokumentation erstellen</h2>
+                <hr>
+                <p>TODO
+                </p>
+                <br> <br>
+                <h2>Gantt-Diagramm verwalten</h2>
+                <hr>
+                <p>TODO
+                </p>
+                <br> <br>
+            </div>
             </div>
           </div>
-
-        <div class="article1">
-            <div class="article-content">
-                <h1>Analysephase</h1>
-                <br>
-                <p>
-                    Zu Beginn des Projekts haben wir uns gemeinsam als Team zusammengesetzt und besprochen wie wir an dieses Projekt herangehen möchten. Relativ zügig sind wir zu dem Schluss gekommen, dass wir das Projekt in drei große Phasen einteilen werden. Die Analyse-, Implementierungs- und die Integrationsphase.
-                    <br>
-                    In der Analysephase geht es besonders darum, alle nötigen Anforderungen zu formulieren, um mit der Softwareentwicklung beginnen zu können. Die einzelnen Themenbereiche werden nun detaillierter erläutert.
-                </p>
-                <br>
-                <hr>
-                <br>
-                <br>
-                <h2>Aufgabenverteilung</h2>
-                <br>
-                <p>
-                    Einer der ersten Aufgaben die Anstand, war das zuteilen von gewissen Arbeitspaketen und entsprechenden Verantwortlichkeiten. Dazu haben wir uns überlegt welche möglichen Arbeitsbereiche und Aufgaben es in diesem Projekt gibt und wer sich auf welches Thema spezialisiert. Erarbeitet haben wir uns dabei vorerst die Arbeitsbereiche wie in der Tabelle zu sehen.
-                    <br>
-                    Anschließend haben wir darüber gesprochen wer sich was zutraut, in welchen Bereichen jeder seine Stärken und Schwächen hat und wo vielleicht jemand schon mehr Erfahrung gesammelt hat im Vergleich zu anderen. Anhand dessen haben wir die Hauptverantwortlichen den beschlossenen Arbeitsbereichen folgendermaßen zugeteilt:
-                </p>
-            </div>
-        </div>
-
-        
-   
     </div>
 </body>
 </html>
