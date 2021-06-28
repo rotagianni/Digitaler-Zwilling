@@ -369,7 +369,7 @@ input[type='checkbox'] {
   }
 
   .toggle:checked + .lbl-toggle + .collapsible-content {
-    max-height: 200vh;
+    max-height: 500vh;
   }
 
   .toggle:checked + .lbl-toggle::before {
@@ -387,4 +387,33 @@ input[type='checkbox'] {
       overflow: hidden;
       margin-top: 20px;
       margin-bottom: 20px;
+  }
+
+  .content-chapter {
+    display: flex;
+  }
+
+  .content-chapter p {
+      margin: auto;
+      margin-top: 10px;
+    flex-basis: 70%;
+  }
+
+  .content-inner p {
+    margin: auto;
+    margin-top: 10px;
+  flex-basis: 70%;
+}
+
+  .content-chapter .content-image {
+      margin-left: 35px;
+      margin-top: 15px;
+      overflow: hidden;
+      width: 400px;
+      height: 200px;
+      flex-basis: 40%;
+  }
+
+  .content-chapter .content-image img {
+
   }
