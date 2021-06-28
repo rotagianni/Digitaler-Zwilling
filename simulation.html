@@ -14,16 +14,28 @@
   <div class="body-filter">
      
     <header>
-        <h1>Digitaler Zwilling <br>eines Fischertechnik Roboters</h1>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="simulation.html">Simulation</a></li>
-                <li><a href="information.html">Informationen</a></li>
-                <li><a href="#">Team</a></li>
-            </ul>
-        </nav>
-    </header>
+      <h1 id="title">Digitaler Zwilling <br>eines Fischertechnik Roboters</h1>
+      <nav>
+          <ul class="nav_links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="simulation.html">Simulation</a></li>
+              <li><a href="information.html">Informationen</a></li>
+              <li><a href="#">Team</a></li>
+          </ul>
+      </nav>
+  </header>
+  <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle("sticky", window.scrollY > 0);
+          var title = document.getElementById("title");
+          if(window.scrollY > 0){
+          title.innerHTML = "Digitaler Zwilling eines Fischertechnik Roboters";
+          } else {
+              title.innerHTML = "Digitaler Zwilling <br>eines Fischertechnik Roboters";
+          }
+      })
+  </script>
   
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
