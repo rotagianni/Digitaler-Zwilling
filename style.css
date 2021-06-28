@@ -14,8 +14,10 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    /*background-image: url("bg.jpg");
+    background-color: rgb(124, 132, 158);
+    /*
+    background-color: rgb(158, 124, 124);
+    background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;*/
 }
@@ -60,13 +62,14 @@ h2 {
 header {
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.849);
+    background-color: rgb(60, 60, 60);;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 30px 10%;
     transition: all 0.3s ease 0s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header .nav_links {
@@ -115,13 +118,14 @@ button:hover {
 }
 
 .article {
-    background-color: rgba(0, 0, 0, 0.849);
+    background-color: rgb(60, 60, 60);;
     margin: auto;
     width: 71.5%;
     align-items: center;
     padding: 34px;
     margin-bottom: 20px;
     border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -220,13 +224,14 @@ input[name="r"] {
 
 /* ARTICLE 1 */
 .article1 {
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: rgb(60, 60, 60);;
     margin: auto;
     width: 71.5%;
     padding: 0;
     margin-bottom: 20px;
     border-radius: 4px;
-    display: flex;  
+    display: flex; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .article1 .article-image {
     flex-basis: 50%;
@@ -254,13 +259,14 @@ input[name="r"] {
 
 /* ARTICLE 2 */
 .article2 {
-    background-color: rgba(0, 0, 0, 0.849);
+    background-color: rgb(60, 60, 60);;
     margin: auto;
     width: 71.5%;
     padding: 0;
     margin-bottom: 20px;
     border-radius: 4px;
-    display: flex;  
+    display: flex; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .article2 .article-image {
     flex-basis: 50%;
@@ -306,12 +312,17 @@ input[type='checkbox'] {
       font-size: 30px;
       text-transform: uppercase;
       color: #e0e0e0;
-      background: #000000a8;
+      background: rgb(60, 60, 60);
       cursor: pointer;
       border-radius: 7px;
       transition: all 0.25s ease-out;
       display: flex;
       overflow: hidden;
+
+      border-bottom-width: 2px;
+      border-bottom-color: snow;
+      border-bottom-style: solid;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .collapsible-title {
@@ -346,7 +357,7 @@ input[type='checkbox'] {
   }
 
   .collapsible-content .content-inner {
-    background: rgba(0, 0, 0, 0.712);
+    background: rgb(73, 73, 73);
     border-bottom: 1px solid rgb(255, 255, 253);
   
     border-bottom-left-radius: 7px;
@@ -387,6 +398,7 @@ input[type='checkbox'] {
       overflow: hidden;
       margin-top: 20px;
       margin-bottom: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .content-chapter {
