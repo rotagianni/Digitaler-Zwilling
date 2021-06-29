@@ -417,6 +417,28 @@ input[type='checkbox'] {
   flex-basis: 70%;
 }
 
+.content-inner li {
+    color: #edf0f1e0;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+    color: #edf0f1e0;
+    text-decoration: none;
+    justify-content: space-evenly;
+
+    margin: auto;
+    margin-left: 40px;
+    margin-top: 10px;
+  flex-basis: 70%;
+}
+
+.content-inner ul {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
   .content-chapter .content-image {
       margin-left: 35px;
       margin-top: 15px;
